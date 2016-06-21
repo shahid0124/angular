@@ -1,0 +1,289 @@
+<html>
+    <head>
+       
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
+        <link rel='stylesheet prefetch' href='css/bootstrap.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Bitter:400,400italic" rel="stylesheet" type="text/css" >
+        
+
+    </head>
+<body ng-app="myApp">
+
+<header class = "header">
+   <div class="container-fluid">
+       <div class="row-fluid">
+        <h1 class = "text-center"> This is header </h1>
+    
+        </div>
+    
+    </div>    
+    
+</header>
+    
+<hr>
+    
+<div class="contactusformwrap">
+  <div class="container">
+    <div class="row">
+      <form class="form-horizontal"  role ="form" method="post" action="">
+       <div ng-controller="nameController">
+        <div class="form-group">
+        <label for="firstname" class="col-xs-2 col-sm-2   control-label">First Name</label>
+           <div class="col-xs-5 col-sm-5">
+                         <input type="text" class="form-control" ng-model="firstname" ng-change="analyze(firstname)" id="firstname" name="firstname"  placeholder="Enter your first Name" required>
+               
+               <div ng-style="firstnamechecker" class="col-xs-3 col-sm-3">
+                 <span ng-bind="firsterror" class="col-xs-3 col-sm-3"></span>
+               </div>
+           
+               </div>
+               
+       </div>
+ 
+ <div class="form-group">
+    <label for="lastname" class="col-xs-2 col-sm-2  control-label">Last Name</label>      
+      <div class="col-xs-5 col-sm-5">
+          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your last name" ng-change="analyze(name)" required>
+     </div>
+     </div>
+ </div>
+          
+<div ng-controller="passwordController">  <!-- Controller to Check the password -->
+    
+<div class="form-group">
+  <label for="password" class="col-xs-2 col-sm-2  control-label"> Password</label>
+    <div class="col-xs-8 col-sm-5">
+
+    <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+    </div>      
+</div>
+</div>      
+        
+        
+</form>
+   
+    
+  </div>       
+  </div>
+
+</div>    
+    
+    
+</body>
+
+
+</html>
+
+
+<!--
+
+<script>
+        
+var app = angular.module("myApp",[]);
+    
+app.controller("nameController", function($scope)
+              
+{              
+
+
+               var ExpressionRegex = new RegExp("^[^0-9]+$"); 
+              
+    $scope.firstnamechecker = {
+                   
+                 
+                  
+                   "height" : "25px",
+                   "margin-left":"5px"
+                   
+                   
+                   
+               };
+    
+    $scope.analyze = function(value)
+    {
+       if(ExpressionRegex.test(value))
+           {
+               
+                $scope.firstnamechecker["background-color"]="inherit";
+                $scope.firsterror="";
+
+             
+           }
+        else
+            {
+                  $scope.firstnamechecker["background-color"]="red";
+                  $scope.firsterror="Name Cannot have Integers";
+            }
+        
+    };
+                
+}
+              
+              
+              
+);
+    
+    
+    
+    
+</script>
+
+
+<div ng-app="myApp">
+    <p> The root color is </p>
+    <h1 style="color:{{color}}">{{color}}</h1>
+    
+    <div ng-controller="myCtrl">
+        <p> this is controller color:</p> 
+        <h1>{{color}}
+    </div>
+  <p> this is root color:</p> 
+        <h1>{{color}}  
+</div>
+
+<script>
+  
+var app = angular.module('myApp',[]);
+app.run(function($rootScope)
+{
+   $rootScope.color="blue";
+   }  
+   );
+   
+ app.controller('myCtrl',function($scope)
+         
+    {
+        $scope.color='red';
+    }     
+            
+            );
+    
+</script>
+
+       <!--
+        <form ng-app="" name="myForm" controller="myctrl">
+            <input type="email" name="emailaddress" ng-model="text">
+            <span ng-show="myForm.emailaddress.$error.email">Not a valid email</span>
+                     
+        </form>
+      
+
+        
+        
+        
+        
+     <!--   
+        <div ng-app="" ng-init="names=[{name:'shahid',country:'Australia'}]">
+             
+             <ul>
+                 <li ng-repeat="x in names">
+                     {{x.name +" "+ x.country}}
+                     
+                 </li>
+            </ul>
+
+    </div>
+  <div ng-app="" ng-init="navbarelements=['Home','About Us','Services','Our Clients','Contact Us']"> 
+<!--
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+     Brand and toggle get grouped for better mobile display 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+      <ul class="nav navbar-nav">
+     
+          <li class="active"><a href="http://www.progalorehub.com.au" ng-bind="navbarelements[0]" target="_blank"> <span class="sr-only">(current)</span></a></li>
+        <li><a  href="#" ng-bind="navbarelements[1]"  ></a></li>
+        <li><a  href="#" ng-bind="navbarelements[2]"  ></a></li>
+        <li><a  href="#" ng-bind="navbarelements[3]"  ></a></li>
+        <li><a  href="#" ng-bind="navbarelements[4]"  ></a></li>
+      </ul>
+      
+  
+   
+    </div><!-- /.navbar-collapse
+  </div><!-- /.container-fluid
+</nav>
+  </div> 
+-->
+     <!-- 
+        <div ng-app="myApp" ng-controller="ngCtrl">
+            First Name:<input type="text" ng-model="firstname"><br>
+            Last Name: <input type="text" ng-model="lastname"><br>
+            <p> Full name:{{firstname +""+ lastname}}</p>
+        </div>
+        <script>
+            var app=angular.module("myApp",[]);
+            app.controller("ngCtrl",function($scope)
+            {
+                $scope.firstname="Shahid";
+                $scope.lastname="javed"
+            }
+                    
+            
+            
+            );
+        </script>
+        
+        <div ng-app="price" ng-controller="priceCtrl">
+           Quantity: <input type="text" ng-model="quantity">
+            Price: <input type="text" ng-model="rate">
+            
+            <p> Total Price : <span ng-bind="price"></span> </p>
+        </div>
+        <script>
+            var app=angular.module("price",[]);
+            app.controller("priceCtrl",function($scope)
+            {
+               $scope.quantity="5";
+               $scope.rate="10";
+               $scope.price=$scope.quantity * $scope.rate;
+               
+            }
+            
+            );
+            
+        </script>
+       
+        
+        <div ng-app="" ng-init="person={firstname:'Shahid', lastname:'Javed'}">
+          <p ng-bind="person.firstname"></p>
+            <p ng-bind="person.lastname"></p>
+            
+        </div>
+      -->
+     <!--
+      <div ng-app="myApp" ng-controller="myCtrl">
+          <input type="text" ng-model="firstname">
+          <input type="text" ng-model="lastname">
+                 
+            {{ firstname+" "+lastname }} 
+      </div>
+      <script>
+           var app= angular.module("myApp",[]);
+           app.controller('myCtrl', function($scope)
+           {
+                $scope.firstname="Shahid";
+                $scope.lastname="javed";
+               
+           });
+          </script>
+     
+     -->
+     
+     
+    

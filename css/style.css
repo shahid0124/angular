@@ -1,0 +1,1074 @@
+html,
+body {
+  height: 100%;
+  padding-top:0px;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+#navbar-main {
+  /* Added `.affix-top` class css when the element is top */
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+  /* Added `.affix-bottom` class css when the element is footer */
+  position: fixed;
+z-index: 1000;
+width: 100%;
+  
+}
+#navbar-main.affixed-top {
+  background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+}
+#navbar-main.affix {
+  background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#navbar-main.affix-bottom {
+  background: red;
+}
+
+/****** Social Icons CSS *******/
+.image
+{
+width: 100px;
+height: 400px;
+float: right;
+position: fixed;
+right: -48px;
+top: 28%;
+z-index: 999;
+padding: 5px;
+}
+.socialiconimages
+{
+    
+    width:50px;
+    height:50px;
+    
+}  
+
+.facbookimage:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+.googleimage:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.linkedinimage:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.twitterimage:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+
+.headerdiv .container-fluid
+{
+    float:left;
+    width:100%;
+}
+
+.page-header
+{
+    margin: 0px -15px 0px -15px !important;
+    background: #4d4d4d;
+    height:33px;
+}
+
+
+
+
+
+.contactusphoneNo
+{
+    color:white;
+     float:left;
+    margin-top:4px;
+    margin-left: 4px;
+}
+
+.phonedetails > a:hover
+{
+    color:rgb(204, 17, 0);
+}
+
+.emaildetails >a:hover
+{
+    color:rgb(204, 17, 0);
+}
+.contactusemail
+{
+     color:white;
+    float:left;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.divider {
+	height:90px;
+}
+
+
+.navigation
+{
+   float:left;
+   margin-top:5px;
+}
+
+.mainnavigation 
+{
+    clear:both ;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+    height: 72px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.nav > li > a {
+   
+    color: white;
+}
+
+.logoimage
+{
+    float:left;
+    height:50px;
+    width:100px;
+    margin-top:-10px;
+}
+
+.nav >li> a:hover
+{
+    background:rgb(204, 17, 0) !important;
+}
+
+.brandelements 
+{
+    width:32%;
+    flOat:left;
+}
+
+.brandelements >h1
+{
+    color:white;
+    margin-top:10px !important;
+    margin-bottom:25px !important;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+    margin-top: -60px;
+}
+
+
+/***** Slider CSS ********/
+.carousel 
+{
+  margin-top:0px;  
+}
+#jquery-script-menu {
+position: fixed;
+height: 90px;
+width: 100%;
+top: 0;
+left: 0;
+border-top: 5px solid #316594;
+background: #fff;
+-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+z-index: 999999;
+padding: 10px 0;
+-webkit-box-sizing:content-box;
+-moz-box-sizing:content-box;
+box-sizing:content-box;
+}
+
+.jquery-script-center {
+width: 960px;
+margin: 0 auto;
+}
+.jquery-script-center ul {
+width: 212px;
+float:left;
+line-height:45px;
+margin:0;
+padding:0;
+list-style:none;
+}
+.jquery-script-center a {
+	text-decoration:none;
+}
+.jquery-script-ads {
+width: 728px;
+height:90px;
+float:right;
+}
+.jquery-script-clear {
+clear:both;
+height:0;
+}
+
+/********* Secondary Navbar *************/
+#secondarynavbar >li >a
+{
+    color:white;
+}
+
+.secondarynavbar .container-fluid
+{
+     background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+}
+
+
+/******** Contact Us Form CSS **********/
+
+.contactusformwrap
+{ 
+   
+    margin-top:50px;
+}
+
+.form-horizontal
+{
+    height:503px;
+}
+
+/********* Media queried **********/
+
+@media (max-width: 768px) {
+
+#section0
+ {
+     margin-top:-55px;
+ }
+ 
+ #section1
+ {
+     margin-top:20px;
+ }
+.phoneimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 8px;
+}
+
+.emailimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: -60%;
+    margin-top: 8px;
+}
+.contactusemail {
+    color: white;
+    float: left;
+    margin-top: 4px;
+    margin-left: -54%;
+}
+.navbar-form
+{
+    visibility : hidden;
+}
+
+.logoimage {
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: -24px;
+    margin-left: -21%;
+}
+
+.brandelements
+{
+    width:100%;
+    float:left;
+}
+
+.mainheading
+{
+    font-size:14px;
+    color:white;
+}
+
+.navbar-toggle
+{
+    border:1px solid white !important;
+}
+
+.icon-bar
+{
+    border:1px solid white;
+}
+
+#navbar-main {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+    height:72px;
+}
+
+.navbar-inverse
+{
+    visibility:hidden;
+}
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    height: 212px;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);;
+}
+
+.divider
+{
+    height:0px;
+}
+/***** Footer Adjustments ****/
+.footer {
+  background: #4d4d4d;
+  height:auto;
+}
+
+.contactdetails
+{
+    margin-top:25px;
+}
+
+.sectionheader
+{
+    margin-top:-10px;
+}
+
+.footerformwrap
+{
+    margin-top:15px;
+}
+
+.footerformwrap .row .form-horizontal .control-label
+{
+    text-align:left !important;
+    color:white !important;
+}
+
+.footerformwrap .row .form-horizontal 
+{
+    height:335px;
+    
+}
+}
+
+.gifimage
+{
+    width:100%;
+}
+
+
+@media (min-width: 768px) {
+body
+{
+    overflow-x:hidden;
+}
+
+.navbar-inverse
+{
+    visibility:visible;
+}
+
+#section0
+ {
+     margin-top:-55px;
+ }
+.phoneimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 8px;
+}
+
+.emailimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: -60%;
+    margin-top: 8px;
+}
+.contactusemail {
+    color: white;
+    float: left;
+    margin-top: 4px;
+    margin-left: -57%;
+}
+.navbar-form
+{
+    visibility : hidden;
+}
+
+.logoimage {
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: -6px;
+    margin-left: -21%;
+}
+
+.brandelements
+{
+    width:100%;
+    float:left;
+}
+
+.mainheading
+{
+    font-size:14px;
+    color:white;
+    float: left;
+    margin-left: -19px;
+}
+
+.navbar-toggle
+{
+    border:1px solid white !important;
+}
+
+.icon-bar
+{
+    border:1px solid white;
+}
+/******** Navigation Menu *********/
+#navbar-main {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+    height:72px;
+}
+
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    height: 212px;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);;
+}
+
+.navigation {
+    float: right;
+    margin-top: -48px;
+    margin-right: -27px;
+}
+.divider
+{
+    height:0px;
+}
+/***** Footer Adjustments ****/
+.footer {
+  background: #4d4d4d;
+  height:auto;
+}
+
+.contactdetails
+{
+    margin-top:0px;
+    margin-left:-19px;
+    
+}
+
+.footerformwrap
+{
+    margin-top:15px;
+}
+
+.footerformwrap .row .form-horizontal .control-label
+{
+    text-align:left !important;
+    color:white !important;
+}
+
+.footerformwrap .row .form-horizontal 
+{
+    height:335px;
+    
+}
+
+
+}
+@media (min-width: 970px) {
+  .navigation {
+     float:left;
+     margin-top: 0px; 
+     margin-right: 0px; 
+}
+
+
+ #section0
+ {
+     margin-top:-98px;
+ }
+ 
+ 
+.sectionheader
+{
+    margin-top:0px;
+}
+.phoneimage
+{
+font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 36%; 
+    margin-top: 8px;
+}
+
+.emailimage
+{
+  font-family: sans-serif;
+font-size: 13px;
+line-height: 20px;
+color: #555;
+width: 20px;
+height: 15px;
+float:left;
+margin-left: 4%;
+margin-top: 8px;  
+}
+.navbar-form {
+    visibility: inherit;
+}
+  
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+ 
+
+.panel {
+	border-width:0;
+}
+
+#section1
+{
+    padding-top:100px;
+}
+
+.divider 
+{
+    height:90px;
+}
+.mainheading{
+    font-size: 17px !important;
+    color:white;
+    .mainheading;
+    float:none;
+    margin-left:0px;
+}
+
+.logoimage {
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: -6px;
+    margin-left: 7%;
+}
+.navbar-right {
+    float: right !important;
+    margin-right: 10% !important;
+    margin-top: -2% !important;
+}
+
+.brandelements {
+    width: 32%;
+    flOat: left;
+    margin-left: -3%;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -1% !important;
+    margin-top: -5% !important;
+}
+.navbar-inverse
+{
+    visibility:visible;
+}
+.form-horizontal .control-label
+{
+    text-align:left !important;
+   
+}
+
+.emailimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: -46%;
+    margin-top: 8px;
+}
+
+.contactusemail {
+    color: white;
+    float: left;
+    margin-top: 4px;
+    margin-left: -43.5%;
+}
+
+.contactdetails
+{
+    float:left;
+    margin-left:-5%;
+}
+
+.footer {
+  background: #4d4d4d;
+  height: 385px;
+}
+
+.footerformwrap
+{
+    margin-top:15px;
+}
+.footerformwrap .row .form-horizontal .control-label
+{
+    text-align:left !important;
+    color:white !important;
+}
+
+.footerformwrap .row .form-horizontal 
+{
+    height:335px;
+    
+}
+
+.menu_simple
+{
+    margin-left:-10%;
+}
+}
+  
+@media (min-width: 1170px) {
+.clientsimage
+{
+    
+    margin-left:100px;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: 0% !important;
+    margin-top: -38px !important;
+}
+  .brandelements {
+    width: 32%;
+    flOat: left;
+    margin-left: -15px;
+}
+
+
+.navigation {
+  
+    margin-left: 3%;
+}
+}        
+
+.navbar-toggle {
+	outline:0;
+}
+
+
+
+
+.aboutus .container
+{
+    border: 1px solid #b7b7b7;
+    margin-top:30px;
+}
+}
+
+/************ Footer Menu ***********/
+.footernav .menu_simple
+{
+    width:200px;
+    float:left;
+    margin-left:10%;
+    
+    
+}
+.menu_simple ul {
+margin: 0 ;
+padding: 0;
+width:188px;
+list-style-type: circle;
+}
+ .menu_simple ul li
+ {
+     border-bottom:1px solid rgba(255,255,255,0.075);
+ }
+.menu_simple ul li a {
+text-decoration: none;
+color: WHITE ;
+padding: 10.5px 11px ;
+background-color: inherit ;
+display:block;
+}
+
+.menu_simple ul li a:visited {
+color: white;.
+}
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+color: white;
+background-color: rgb(204, 17, 0);;
+
+}
+
+/****** Footer Contact Details *****/
+
+.contactdetails >h4
+{
+    color:white;
+    padding-left:0px !important;
+}
+
+.contactdetails >p
+{
+    color:white;
+}
+
+.copyright
+{
+    float: left;
+    margin-top: -4px;
+    margin-left: 1%
+}
+
+@media only screen and (max-device-width : 767px)
+{
+    
+ #section0
+ {
+     margin-top:-55px;
+ }
+ 
+ #section1
+ {
+     margin-top:20px;
+ }
+.phoneimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 8px;
+}
+
+.emailimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: -60%;
+    margin-top: 8px;
+}
+.contactusemail {
+    color: white;
+    float: left;
+    margin-top: 4px;
+    margin-left: -54%;
+}
+.navbar-form
+{
+    visibility : hidden;
+}
+
+.logoimage {
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: -24px;
+    margin-left: -21%;
+}
+
+.brandelements
+{
+    width:100%;
+    float:left;
+}
+
+.mainheading
+{
+    font-size:14px;
+    color:white;
+}
+
+.navbar-toggle
+{
+    border:1px solid white !important;
+}
+
+.icon-bar
+{
+    border:1px solid white;
+}
+
+#navbar-main {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+    height:72px;
+}
+
+.navbar-inverse
+{
+    visibility:hidden;
+}
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    height: 212px;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);;
+}
+
+.divider
+{
+    height:0px;
+}
+/***** Footer Adjustments ****/
+.footer {
+  background: #4d4d4d;
+  height:auto;
+}
+
+.contactdetails
+{
+    margin-top:25px;
+}
+
+.sectionheader
+{
+    margin-top:-10px;
+}
+
+.footerformwrap
+{
+    margin-top:15px;
+}
+
+.footerformwrap .row .form-horizontal .control-label
+{
+    text-align:left !important;
+    color:white !important;
+}
+
+.footerformwrap .row .form-horizontal 
+{
+    height:335px;
+    
+}
+}
+
+.gifimage
+{
+    width:100%;
+}
+   
+    
+}
+
+@media only screen and (min-device-width : 767px)
+{
+    body
+{
+    overflow-x:hidden;
+}
+
+.navbar-inverse
+{
+    visibility:visible;
+}
+#section0
+ {
+     margin-top:-55px;
+ }
+.phoneimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 8px;
+}
+
+.emailimage {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: -60%;
+    margin-top: 8px;
+}
+.contactusemail {
+    color: white;
+    float: left;
+    margin-top: 4px;
+    margin-left: -57%;
+}
+.navbar-form
+{
+    visibility : hidden;
+}
+
+.logoimage {
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: -6px;
+    margin-left: -21%;
+}
+
+.brandelements
+{
+    width:100%;
+    float:left;
+}
+
+.mainheading
+{
+    font-size:14px;
+    color:white;
+    float: left;
+    margin-left: -19px;
+}
+
+.navbar-toggle
+{
+    border:1px solid white !important;
+}
+
+.icon-bar
+{
+    border:1px solid white;
+}
+/******** Navigation Menu *********/
+#navbar-main {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);
+    height:72px;
+}
+
+.navbar-inverse
+{
+    visibility:hidden;
+}
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    height: 212px;
+    background: linear-gradient(to bottom,rgba(92,93,96,0.9) 0,rgba(97,98,101,0.9) 100%);;
+}
+
+.navigation {
+    float: right;
+    margin-top: -48px;
+    margin-right: -27px;
+}
+.divider
+{
+    height:0px;
+}
+/***** Footer Adjustments ****/
+.footer {
+  background: #4d4d4d;
+  height:auto;
+}
+
+.contactdetails
+{
+    margin-top:0px;
+    margin-left:-19px;
+    
+}
+
+.footerformwrap
+{
+    margin-top:15px;
+}
+
+.footerformwrap .row .form-horizontal .control-label
+{
+    text-align:left !important;
+    color:white !important;
+}
+
+.footerformwrap .row .form-horizontal 
+{
+    height:335px;
+    
+}
+
+    
+}

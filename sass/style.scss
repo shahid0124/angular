@@ -1,0 +1,32 @@
+@import "compass/reset";
+@import "compass/css3";
+ 
+body {
+    color: #333;
+}
+
+	
+h1 {
+    font-family: Bitter, Georgia, serif;
+ 
+    /* if you want to use the italic version */
+}
+
+.header 
+{
+    
+    height: 100px;
+    padding: 3em 0 5em;
+    
+    h1 {
+        
+        font-style: italic;
+    }
+}
+
+
+.contactusformwrap
+{
+    padding: 5em 0 5em;
+    
+}
